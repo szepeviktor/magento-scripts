@@ -1,10 +1,26 @@
-maintmode.sh usage
+# Magento Scripts
 
-Set domain group root at 'ROOT=' at the start of the file.
+## maintmode.sh
 
-cd /path/to/script
+### Installation
 
-'./maintmode.sh -e' will enable maintenance mode on all stores in this group
-'./maintmode.sh -d' will disable maintenance mode on all stores in this group
+    cp maintmode.sh /usr/local/bin
+    chmod +x /usr/local/bin/maintmode.sh
+
+### Usage
+
+    $(basename $0) [-d|-e]
 
 y OR n to confirm placing all stores in the domain group in to / out of maintenance mode.
+
+### Examples
+
+#### Enable maintenance mode
+
+    cd /microcloud/domains/example
+    maintmode.sh -e
+
+#### Disable maintenance mode
+
+    cd /microcloud/domains/example
+    maintmode.sh -e
