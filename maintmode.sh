@@ -20,7 +20,7 @@ Examples:
 > Disable maintenance mode
 
     cd /microcloud/domains/example
-    $(basename $0) -e
+    $(basename $0) -d
 
 EOF
 exit 0
